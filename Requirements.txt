@@ -1,0 +1,8 @@
+-----
+| Windows |
+gcc 
+-----
+| Linux |
+gcc 
+-----
+GCC: https://gcc.gnu.org/
