@@ -15,7 +15,7 @@ int main()
     {
         if ( ch == KEY_F(2)){
             system("firefox");
-            printf("F2 apertado");
+            printf("F2");
             break;   
         }
     }
