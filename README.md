@@ -8,28 +8,71 @@
 # | Linux |
 > Keep in mind that you need the gcc compiler.
 
-### By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
+## By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
+
+<br>
 
 ## Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
-## If you wanted the command to run when you start the system:
 
-### Using the file **/etc/rc.local**: Open the terminal. Type the following command to edit the file **/etc/rc.local**: Bash sudo nano/etc/rc.local Add the command or path to your C script above the 0 output line. Save the file by pressing Ctrl+O** and press Enter. Close the editor by pressing **Ctrl+X**. Your script will now run at system startup.
+<br>
+
+### In the terminal linux:
+
+```sh
+   gcc script-c -o script
+```
+
+```sh
+    ./script
+```
+
+<br>
+
+> If you wanted the command to run when you start the system:
+
+> Using the file **/etc/rc.local**: Open the terminal. Type the following command to edit the file **/etc/rc.local**: Bash sudo nano/etc/rc.local Add the command or path to your C script above the 0 output line. Save the file by pressing Ctrl+O and press Enter. Close the editor by pressing **Ctrl+X**. Your script will now run at system startup.
 
 <hr>
 
 # | Windows |
 > Keep in mind that you need the gcc compiler.
 
-### By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
+## By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
 
-### And the script will run,
+## But you can change 
+
+### where it has: **KEY_F(2)** just need to know which key command you want
+
+```sh
+   while (TRUE)
+    {
+        if ( ch == KEY_F(2)){
+            system("firefox");
+            printf("F2");
+            break;   
+        }
+    }
+```
+
+### In the terminal Windows (CMD | Powershell):
+
+```sh
+   gcc script-c -o script
+```
+
+```sh
+    ./"script" or ./"script.exe" 
+``` 
+
+## And the script will run.
 
 ## Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
-## If you wanted the command to run when you start the system:
 
-#### Press **windows+R** and then put: 'shell:startup' (without quotation maks)
+> If you wanted the command to run when you start the system:
 
-### Place the **script.c** inside the folder and now, after starting the system.
+> Press **windows+R** and then put: 'shell:startup' (without quotation maks);
+
+> Place the **script.c** and **script.exe** inside the folder and now, after starting the system.
 
 <hr>
 
