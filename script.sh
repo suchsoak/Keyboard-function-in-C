@@ -6,7 +6,7 @@ g=$?
 
 if [ $g -eq 0 ]
 then
- 	echo "script.c compilado para scrip.exe"
+ 	echo "script.c compiled for scrip.exe"
 else 
- 	echo "Ocorreu um problema no compilador"
+ 	echo "A compiler problem occurred"
 fi
