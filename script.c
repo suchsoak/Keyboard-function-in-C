@@ -4,19 +4,28 @@
 
 int main()
 {
-    initscr();
-    cbreak();
-    noecho();
+    initscr(); 
+    cbreak();  
+    noecho();  
     keypad( stdscr, TRUE);    
+    start_color();
 
     int ch = getch();
 
     while (TRUE)
     {
-        if ( ch == KEY_F(2)){
-            system("firefox");
-            printf("F2");
+        COLOR_RED;
+        if ( ch == KEY_HOME){
+            system("firefox https://github.com/suchsoak");
             break;   
+        }
+        else{
+            printf("outro botao\n");
+            break;
+        }
+        if (initscr == NULL){
+            printf("Ocorreu um error!!");
+
         }
     }
     
