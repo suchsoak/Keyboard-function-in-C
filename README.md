@@ -19,11 +19,15 @@
 ### In the terminal linux:
 
 ```sh
-   gcc script.c -o script
+   chmod +x script.sh
 ```
 
 ```sh
-    ./script
+    ./scritp.sh
+```
+
+```sh
+    ./script.exe
 ```
 
 <br>
