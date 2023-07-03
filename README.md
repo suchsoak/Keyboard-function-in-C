@@ -19,7 +19,7 @@
 ### In the terminal linux:
 
 ```sh
-   gcc script-c -o script
+   gcc script.c -o script
 ```
 
 ```sh
@@ -46,7 +46,7 @@
 ```sh
    while (TRUE)
     {
-        if ( ch == KEY_F(2)){
+        if ( ch == KEY_HOME){
             system("firefox");
             printf("F2");
             break;   
@@ -57,7 +57,7 @@
 ### In the terminal Windows (CMD | Powershell):
 
 ```sh
-   gcc script-c -o script
+   gcc script.c -o script
 ```
 
 ```sh
