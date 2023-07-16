@@ -48,14 +48,13 @@
 ### where it has: **KEY_HOME** just need to know which key command you want
 
 ```sh
-   while (TRUE)
+     while (TRUE)
     {
+        COLOR_RED;
         if ( ch == KEY_HOME){
-            system("firefox");
-            printf("F2");
+            system("firefox https://github.com/suchsoak");
             break;   
         }
-    }
 ```
 
 ### In the terminal Windows (CMD | Powershell):
