@@ -85,3 +85,16 @@
 | stdio.h | https://petbcc.ufscar.br/stdio/
 | stdlib.h | https://petbcc.ufscar.br/stdlib/
 
+```sh
+KEY_BACKSPACE: the backspace key
+KEY_DC: the delete key
+KEY_END: the end key
+KEY_IC: the insert key
+KEY_LEFT: the left arrow key
+KEY_NPAGE: the page down key
+KEY_PPAGE: the page up key
+KEY_RESIZE: an event that occurs when the terminal window is resized
+KEY_RIGHT: the right arrow key
+KEY_UP: the up arrow key
+```
+
