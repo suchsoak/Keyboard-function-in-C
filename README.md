@@ -45,7 +45,7 @@
 
 ## But you can change 
 
-### where it has: **KEY_F(2)** just need to know which key command you want
+### where it has: **KEY_HOME** just need to know which key command you want
 
 ```sh
    while (TRUE)
