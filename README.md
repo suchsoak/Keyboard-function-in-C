@@ -2,21 +2,17 @@
 
 > Change the function of a keyboard key to perform the function you want.
 
-# The script is under development, it will be for both linux and windows users.
+The script is under development, it will be for both linux and windows users.
 
 
 # | Linux |
 > Keep in mind that you need the gcc compiler.
 
-## By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
+By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
 
-<br>
+Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
 
-## Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
-
-<br>
-
-### In the terminal linux:
+In the terminal linux:
 
 ```sh
    chmod +x script.sh
@@ -41,11 +37,11 @@
 # | Windows |
 > Keep in mind that you need the gcc compiler.
 
-## By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
+By default is the **F2** key to run firefox. But, you can change inside the file, inside the **system** put the command you want.
 
-## But you can change 
+But you can change 
 
-### where it has: **KEY_HOME** just need to know which key command you want
+where it has: **KEY_HOME** just need to know which key command you want
 
 ```sh
      while (TRUE)
@@ -65,9 +61,7 @@
 
 ```sh
     ./"script" or ./"script.exe" 
-``` 
-
-## And the script will run.
+```
 
 ## Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
 
