@@ -19,7 +19,7 @@ In the terminal linux:
 ```
 
 ```sh
-    ./scritp.sh
+    bash ./script.sh
 ```
 
 ```sh
