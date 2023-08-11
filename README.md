@@ -15,11 +15,11 @@ Download the file, run either in the terminal using the gcc compiler or just tic
 In the terminal linux:
 
 ```sh
-   chmod +x script.sh
+   chmod +x ncurses.sh
 ```
 
 ```sh
-    bash ./script.sh
+    bash ./ncurses.sh
 ```
 
 ```sh
