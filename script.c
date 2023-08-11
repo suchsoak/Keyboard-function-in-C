@@ -20,11 +20,11 @@ int main()
             break;   
         }
         else{
-            printf("outro botao\n");
+            printf("Another botton\n");
             break;
         }
         if (initscr == NULL){
-            printf("Ocorreu um error!!");
+            printf("Have some problem!!");
 
         }
     }
