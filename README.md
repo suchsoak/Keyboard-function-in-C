@@ -4,6 +4,8 @@
 
 The script is under development, it will be for both linux and windows users.
 
+> **If you dont garen use the keyboard use for exemplo fn+f2**
+
 
 # | Linux |
 > Keep in mind that you need the gcc compiler.
