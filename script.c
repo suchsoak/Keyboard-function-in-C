@@ -22,7 +22,7 @@ int main()
     {
         COLOR_RED;
         if ( ch == KEY_F(2)){
-            system("\nfirefox");
+            system("firefox https://github.com/suchsoak/");
             system("clear");
             break;   
         }
