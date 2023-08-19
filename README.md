@@ -4,7 +4,7 @@
 
 The script is under development, it will be for both linux and windows users.
 
-> **If you dont garen use the keyboard use for exemplo fn+f2**
+> **If you don't garen use the keyboard use for exemplo fn+f2**
 
 
 # | Linux |
