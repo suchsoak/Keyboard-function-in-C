@@ -1,8 +1,2 @@
------
-| Windows |
-gcc 
------
-| Linux |
-gcc 
------
-GCC: https://gcc.gnu.org/
+ncurses.h
+sys/utsname.h
