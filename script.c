@@ -2,32 +2,47 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ncurses.h>
-#include <sys/utsname.h>
+#include <unistd.h> 
+
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
 
 int main()
 {
+    system("clear");
+    char* text = "  __    __                   \n"
+                "|  \\  /  \\                     /      \\ \n"
+                "| ▓▓ /  ▓▓ ______  __    __   |  ▓▓▓▓▓▓\\ \n"
+                "| ▓▓/  ▓▓ /      \\|  \\  |  \\  | ▓▓   \\▓▓\"\n"
+                "| ▓▓  ▓▓ |  ▓▓▓▓▓▓\\ ▓▓  | ▓▓  | ▓▓      \n"
+                "| ▓▓▓▓▓\\ | ▓▓    ▓▓ ▓▓  | ▓▓  | ▓▓   __ \n"
+                "| ▓▓ \\▓▓\\| ▓▓▓▓▓▓▓▓ ▓▓__/ ▓▓__| ▓▓__/  \\\"\n"
+                "| ▓▓  \\▓▓\\▓▓     \\▓▓    ▓▓  \\▓▓    ▓▓\"\n"
+                " \\▓▓   \\▓▓ \\▓▓▓▓▓▓▓_\\▓▓▓▓▓▓▓\\▓▓ \\▓▓▓▓▓▓ \n"
+                "                  |  \\__| ▓▓            \n"
+                "                   \\▓▓    ▓▓            \n"
+                "                    \\▓▓▓▓▓▓             \n"
+                "      Github:https://github.com/suchsoak/ \n "
+                "                   v:1.0.0.0             \n ";
 
-    #ifdef __linux__
-            printf("You have Linux! COOL!\n");
+    printf("%s%s%s", ANSI_COLOR_RED, text, ANSI_COLOR_RESET);
+    sleep(2); 
 
-    initscr(); 
-    cbreak();  
-    noecho();
-    refresh();  
-    keypad( stdscr, TRUE);
-    // start_color();
-    int ch = getch();
-        
+    int ch;
+    initscr();
+    refresh();
+    getch();
+    ch = getch();
+    keypad(stdscr, TRUE);
     while (TRUE)
     {
         COLOR_RED;
-        if ( ch == KEY_F(2)){
+        if ( ch == KEY_HOME){
             system("firefox https://github.com/suchsoak/");
-            system("clear");
             break;   
         }
         else{
-            printf("\nanother button");
+            printf("\nAnother button");
             break;
         }
         if (initscr == NULL){
@@ -36,16 +51,8 @@ int main()
         }
     }
     
-
-    #elif _WIN32
-        printf("You use windows, man this not cool. Go to linux NOW!!\n");
-
-    #else
-        printf("Sorry, the system are"
-        "not listed above.\n");
-
-
-#endif
-endwin();
+    refresh();
+    getch();
+    endwin();
     return 0;
 }
