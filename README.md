@@ -87,6 +87,12 @@ KEY_PPAGE: the page up key
 KEY_RESIZE: an event that occurs when the terminal window is resized
 KEY_RIGHT: the right arrow key
 KEY_UP: the up arrow key
+KEY_HOME: This key is used to move the cursor to the beginning of a line or document.
+KEY_FIND: This key is used to initiate a search or find operation.
+KEY_HELP: This key is used to access help or get assistance.
+KEY_EXIT: This key is used to exit or close a program or application.
+KEY_BREAK: This key is used to send a break signal or interrupt a process.
+KEY_F(n): These keys represent function keys, where "n" is a number from 0 to 12 or more, depending on the keyboard.
 
 ```
 
