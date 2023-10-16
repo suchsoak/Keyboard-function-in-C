@@ -2,8 +2,6 @@
 
 > Change the function of a keyboard key to perform the function you want.
 
-The script is under development, it will be for both linux and windows users.
-
 > **If you don't garen use the keyboard use for exemplo fn+f2**
 
 
@@ -17,15 +15,11 @@ Download the file, run either in the terminal using the gcc compiler or just tic
 In the terminal linux:
 
 ```sh
-   chmod +x ncurses.sh
+   gcc key.c -o key.exe -lcurses
 ```
 
 ```sh
-    bash ./ncurses.sh
-```
-
-```sh
-    ./script.exe
+    ./key.exe
 ```
 
 <br>
@@ -58,11 +52,11 @@ where it has: **KEY_HOME** just need to know which key command you want
 ### In the terminal Windows (CMD | Powershell):
 
 ```sh
-   gcc script.c -o script
+   gcc key.c -o key.exe -lcurses
 ```
 
 ```sh
-    ./"script" or ./"script.exe" 
+    ./"key.exe" 
 ```
 
 ## Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
@@ -71,7 +65,7 @@ where it has: **KEY_HOME** just need to know which key command you want
 
 > Press **windows+R** and then put: 'shell:startup' (without quotation maks);
 
-> Place the **script.c** and **script.exe** inside the folder and now, after starting the system.
+> Place the **key.c** and **key.exe** inside the folder and now, after starting the system.
 
 <hr>
 
@@ -82,6 +76,7 @@ where it has: **KEY_HOME** just need to know which key command you want
 | stdlib.h | https://petbcc.ufscar.br/stdlib/
 
 ```sh
+
 KEY_BACKSPACE: the backspace key
 KEY_DC: the delete key
 KEY_END: the end key
@@ -92,5 +87,6 @@ KEY_PPAGE: the page up key
 KEY_RESIZE: an event that occurs when the terminal window is resized
 KEY_RIGHT: the right arrow key
 KEY_UP: the up arrow key
+
 ```
 
