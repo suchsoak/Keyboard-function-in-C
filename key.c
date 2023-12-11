@@ -23,7 +23,6 @@ int main()
                 "                   \\▓▓    ▓▓            \n"
                 "                    \\▓▓▓▓▓▓             \n"
                 "      Github:https://github.com/suchsoak/ \n "
-                "                   v:1.0.0.0             \n ";
 
     printf("%s%s%s", ANSI_COLOR_RED, text, ANSI_COLOR_RESET);
     sleep(2); 
