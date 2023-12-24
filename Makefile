@@ -1,2 +1,2 @@
 gcc:
-	gcc key.c -o key.exe
+	gcc key.c -o key.exe -lcurses
