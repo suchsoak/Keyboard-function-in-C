@@ -22,7 +22,7 @@ int main()
                 "                  |  \\__| ▓▓            \n"
                 "                   \\▓▓    ▓▓            \n"
                 "                    \\▓▓▓▓▓▓             \n"
-                "      Github:https://github.com/suchsoak/ \n "
+                "      Github:https://github.com/suchsoak/ \n ";
 
     printf("%s%s%s", ANSI_COLOR_RED, text, ANSI_COLOR_RESET);
     sleep(2); 
