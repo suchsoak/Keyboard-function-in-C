@@ -1,53 +1,58 @@
-# Keyboard-function-in-C
+# ⌨️ Keyboard Function in C
 
-**Change the function of a keyboard key to perform the function you want.**
+**Remap keyboard keys to perform custom functions.**
 
 >[!NOTE]
->Or you can use the scripts separately
->If you don't garen use the keyboard use for exemplo fn+f2
+>You can also use the scripts separately.
+>If you don't want to use the keyboard function, try `fn+f2` for example.
 
-By default is the `F2` key to run firefox. But, you can change inside the file, inside the `system` put the command you want.
+## 🚀 Quick Start
 
-Download the file, run either in the terminal using the gcc compiler or just ticking in the file.
+By default, the `F2` key launches Firefox. You can change this by editing the `system` command in the file to run whatever you want.
 
-```sh
-   gcc key.c -o key.exe -lcurses
-```
+## 📥 Installation & Usage
 
-```sh
-    ./key.exe
-```
-
-`or use Makefile`
+Download the file and run it using the GCC compiler:
 
 ```sh
-    make
+gcc key.c -o key.exe -lcurses
+./key.exe
 ```
 
-| Libraries |  Links |
-| ------ | ------ |
-| ncurses | https://terminalroot.com.br/ncurses/
-| stdio.h | https://petbcc.ufscar.br/stdio/
-| stdlib.h | https://petbcc.ufscar.br/stdlib/
+**Or using Makefile:**
 
 ```sh
-
-KEY_BACKSPACE: the backspace key
-KEY_DC: the delete key
-KEY_END: the end key
-KEY_IC: the insert key
-KEY_LEFT: the left arrow key
-KEY_NPAGE: the page down key
-KEY_PPAGE: the page up key
-KEY_RESIZE: an event that occurs when the terminal window is resized
-KEY_RIGHT: the right arrow key
-KEY_UP: the up arrow key
-KEY_HOME: This key is used to move the cursor to the beginning of a line or document.
-KEY_FIND: This key is used to initiate a search or find operation.
-KEY_HELP: This key is used to access help or get assistance.
-KEY_EXIT: This key is used to exit or close a program or application.
-KEY_BREAK: This key is used to send a break signal or interrupt a process.
-KEY_F(n): These keys represent function keys, where "n" is a number from 0 to 12 or more, depending on the keyboard.
-
+make
 ```
 
+## 📚 Libraries
+
+| Library | Documentation |
+|---------|---|
+| 📦 ncurses | https://terminalroot.com.br/ncurses/ |
+| 📦 stdio.h | https://petbcc.ufscar.br/stdio/ |
+| 📦 stdlib.h | https://petbcc.ufscar.br/stdlib/ |
+
+## ⌨️ Supported Keys
+
+| Key | Function |
+|-----|----------|
+| `KEY_BACKSPACE` | Backspace key |
+| `KEY_DC` | Delete key |
+| `KEY_END` | End key |
+| `KEY_IC` | Insert key |
+| `KEY_LEFT` | Left arrow key |
+| `KEY_RIGHT` | Right arrow key |
+| `KEY_UP` | Up arrow key |
+| `KEY_HOME` | Move cursor to beginning of line/document |
+| `KEY_PPAGE` | Page up key |
+| `KEY_NPAGE` | Page down key |
+| `KEY_FIND` | Search/Find operation |
+| `KEY_HELP` | Access help |
+| `KEY_EXIT` | Exit program |
+| `KEY_BREAK` | Send break signal |
+| `KEY_F(n)` | Function keys (F0-F12+) |
+| `KEY_RESIZE` | Terminal window resize event |
+
+## License & Copyright 📜
+`GNU GENERAL PUBLIC LICENSE`
